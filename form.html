@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Reset some basic elements */
+        body, h1, form, label, input, select, button {
+            margin: 100;
+            padding: 200;
+            box-sizing: border-box;
+        }
+
+        /* Style the body */
+        body {
+            font-family:'Times New Roman', Times, serif
+            display: block;
+            justify-content: center;
+            align-items: center;
+            height: 100;
+        }
+
+        /* Style the form container */
+        form {
+            content: initial;
+            background: #77a4d1;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* Style the form elements */
+        h1 {
+            margin-bottom: 10px;
+            text-align: center;
+            color: #242424;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-family:'Times New Roman', Times, serif;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="file"],
+        select {
+            width: calc(100px-20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #aeff00;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-inline: 10px;
+        }
+
+        input[type="checkbox"] + label {
+            display:inline-flex;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px;
+        }
+
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+</head>
+<body>
+    <center>
+    <form>
+        <h1>Basic Form</h1>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" size="25" placeholder="Enter your Full Name" required></br>
+        <label for="email">Email Id:</label>
+        <input type="email" id="email" name="email" size="20" placeholder="Enter your Email-id" required><br>
+        <label for="mobile number">Mobile Number:</label>
+        <select id="operator">
+            <option value="+91">+91</option>
+            <option value="+1">+1</option>
+            <option value="+44">+44</option>
+        </select>
+        <input type="tel" id="mobile number" name="mobile number" placeholder="Enter your Mobile Number" maxlength="10" pattern="[1-10]{10}" title="Mobile Number" required>
+        
+
+        <!-- --- Radio --- -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <br>
+
+        <!-- Checkboxes -->
+        <label>Interests:</label>
+        <input type="checkbox" id="coding" name="interests" value="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="gaming" name="interests" value="gaming">
+        <label for="gaming">Gaming</label>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label><br><br>
+
+
+        <label for="birthdate">Birthdate:</label>
+        <input type="date"></br>
+        <label for="file">File:</label>
+        <input type="file"></br>
+        
+        <input type="checkbox" required><label for="checkbox">Accept the terms & conditions</label></br></br>
+        <button>Submit</button>
+    </form>
+</center>
+</body>
+</html>
